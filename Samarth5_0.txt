@@ -1,0 +1,17 @@
+#include<iostream.h>
+#include<conio.h>
+
+void main()
+{
+clrscr() //to clear the screen
+float a,b,c,sum,av;
+cout<<“Enter three numbers:”;
+cin>>a>>b>>c;
+
+sum=a+b+c;
+av=sum/3;
+cout<<“nSUM=”<<sum;
+cout<<“nAverage=”<<av;
+
+getch(); //to stop the screen
+}
