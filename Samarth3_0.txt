@@ -1,0 +1,53 @@
+#include<conio.h>
+#include<iostream.h>
+#include<dos.h>
+#include<process.h>
+
+void main()
+{
+clrscr();
+char ch,a[]={“Made By : Neeraj Mishra”};
+int j=0;
+
+cout<<“Uppercase Alphabatesnn”;
+for(int i=65;i<91;++i)
+{
+j++;
+ch=i;
+cout<<ch<<“:”<<i<<“t”;
+if(j==10)
+{
+cout<<“n”;
+j=0;
+}
+}
+j=0;
+
+cout<<“nnnLowercase Alphabatesnn”;
+for(i=97;i<123;++i)
+{
+j++;
+ch=i;
+cout<<ch<<“:”<<i<<“t”;
+if(j==10)
+{
+cout<<“n”;
+j=0;
+}
+}
+
+cout<<“nnnDigitsnn”;
+for(i=48;i<58;i++)
+{
+ch=i;
+cout<<ch<<“:”<<i<<“t”;
+}
+
+cout<<“nnnntt”;
+for(i=0;a[i]!=’’;++i)
+{
+cout<<a[i];
+sleep(1);
+}
+exit(0);
+}
